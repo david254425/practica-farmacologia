@@ -13,81 +13,67 @@ h1{text-align:center;font-size:1.6em;margin:16px 0 5px;background:linear-gradien
 .progress-bar{background:#1a1a2e;border-radius:12px;height:22px;margin-bottom:16px;overflow:hidden;position:relative}
 .progress-fill{height:100%;background:linear-gradient(90deg,#667eea,#764ba2);border-radius:12px;transition:width .5s ease}
 .progress-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:.75em;font-weight:600;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5)}
-.card{background:rgba(255,255,255,.07);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px;margin-bottom:16px}
+.card{background:rgba(255,255,255,.07);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:24px 20px;margin-bottom:16px}
 .unit-badge{display:inline-block;padding:4px 14px;border-radius:20px;font-size:.75em;font-weight:700;margin-bottom:10px;letter-spacing:.5px}
 .u2{background:rgba(102,126,234,.25);color:#98b0ff;border:1px solid rgba(102,126,234,.4)}
 .u4{background:rgba(118,75,162,.25);color:#c9a0e8;border:1px solid rgba(118,75,162,.4)}
 .u5{background:rgba(0,210,211,.2);color:#6aeaea;border:1px solid rgba(0,210,211,.3)}
 .q-number{font-size:.85em;color:#888;margin-bottom:6px}
-.question{font-size:1.1em;font-weight:600;line-height:1.5;margin-bottom:16px;color:#f0f0f0}
-
-/* ══ MODE TABS ══ */
-.mode-tabs{display:flex;gap:0;margin-bottom:14px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
-.mode-tab{flex:1;padding:10px;text-align:center;font-size:.9em;font-weight:600;cursor:pointer;transition:all .2s;background:rgba(255,255,255,.04);color:#888}
-.mode-tab.active{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
-.mode-tab:first-child{border-right:1px solid rgba(255,255,255,.12)}
+.question{font-size:1.15em;font-weight:600;line-height:1.5;margin-bottom:20px;color:#f0f0f0}
 
 /* ══ MIC AREA ══ */
-.mic-area{text-align:center;margin:10px 0 14px}
-.mic-btn{width:80px;height:80px;border-radius:50%;border:3px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .3s;position:relative;-webkit-tap-highlight-color:transparent}
-.mic-btn:hover,.mic-btn:active{background:rgba(102,126,234,.2);border-color:rgba(102,126,234,.5)}
-.mic-btn.recording{background:rgba(244,67,54,.2);border-color:#f44336;animation:pulse 1.2s infinite}
-.mic-btn svg{width:32px;height:32px;fill:#ccc;transition:fill .3s}
+.mic-area{text-align:center;margin:15px 0 16px}
+.mic-btn{width:90px;height:90px;border-radius:50%;border:3px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all .3s;position:relative;-webkit-tap-highlight-color:transparent}
+.mic-btn:hover,.mic-btn:active{background:rgba(102,126,234,.25);border-color:rgba(102,126,234,.6)}
+.mic-btn.recording{background:rgba(244,67,54,.25);border-color:#f44336;animation:pulse 1.2s infinite}
+.mic-btn svg{width:38px;height:38px;fill:#fff;transition:fill .3s}
 .mic-btn.recording svg{fill:#f44336}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(244,67,54,.4)}50%{box-shadow:0 0 0 18px rgba(244,67,54,0)}}
-.mic-label{font-size:.85em;color:#888;margin-top:8px}
-.mic-label.rec{color:#f44336;font-weight:600}
-.timer{font-size:.8em;color:#ef9a9a;margin-top:4px;font-variant-numeric:tabular-nums}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(244,67,54,.5)}50%{box-shadow:0 0 0 20px rgba(244,67,54,0)}}
+.mic-label{font-size:.9em;color:#bbb;margin-top:10px;font-weight:500}
+.mic-label.rec{color:#f44336;font-weight:700}
+.timer{font-size:.85em;color:#ef9a9a;margin-top:4px;font-variant-numeric:tabular-nums}
 
-.transcript-box{margin:12px 0;padding:12px 14px;background:rgba(0,0,0,.3);border:2px solid rgba(255,255,255,.12);border-radius:12px;min-height:50px;font-size:.93em;line-height:1.5;color:#e8e8e8;text-align:left}
-.transcript-box.empty{color:#666;font-style:italic}
-.transcript-box .interim{color:#999}
-
-/* ══ TEXT AREA ══ */
-.write-area textarea{width:100%;min-height:110px;background:rgba(0,0,0,.3);border:2px solid rgba(255,255,255,.12);border-radius:12px;padding:14px;color:#e8e8e8;font-size:.93em;font-family:inherit;resize:vertical}
-.write-area textarea:focus{outline:none;border-color:#667eea}
-.write-area textarea::placeholder{color:#666}
-
-.mode-panel{display:none}
-.mode-panel.active{display:block}
+.transcript-box{margin:14px 0;padding:14px 16px;background:rgba(0,0,0,.35);border:2px solid rgba(255,255,255,.12);border-radius:12px;min-height:65px;font-size:.95em;line-height:1.5;color:#e8e8e8;text-align:left}
+.transcript-box.empty{color:#777;font-style:italic}
+.transcript-box .interim{color:#aaa}
 
 .warning-box{background:rgba(255,152,0,.12);border:1px solid rgba(255,152,0,.3);border-radius:10px;padding:12px;margin:10px 0;font-size:.85em;color:#ffe082;text-align:center;line-height:1.5}
-.warning-box b{color:#ffb74d}
 
-.btn-row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;justify-content:center}
-.btn{padding:10px 20px;border:none;border-radius:10px;font-size:.88em;font-weight:600;cursor:pointer;transition:all .2s;-webkit-tap-highlight-color:transparent}
+.btn-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center}
+.btn{padding:12px 24px;border:none;border-radius:10px;font-size:.9em;font-weight:600;cursor:pointer;transition:all .2s;-webkit-tap-highlight-color:transparent}
 .btn:active{transform:scale(.97)}
-.btn-check{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
-.btn-check:disabled{opacity:.4;cursor:not-allowed}
+.btn-check{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;box-shadow:0 4px 15px rgba(102,126,234,.3)}
+.btn-check:disabled{opacity:.4;cursor:not-allowed;box-shadow:none}
 .btn-hint{background:rgba(255,255,255,.08);color:#ccc;border:1px solid rgba(255,255,255,.15)}
-.btn-next{background:linear-gradient(135deg,#00b09b,#96c93d);color:#fff}
+.btn-next{background:linear-gradient(135deg,#00b09b,#96c93d);color:#fff;box-shadow:0 4px 15px rgba(0,176,155,.3)}
 .btn-skip{background:rgba(255,255,255,.05);color:#999;border:1px solid rgba(255,255,255,.1)}
+.btn-clear{background:rgba(244,67,54,.15);color:#ef9a9a;border:1px solid rgba(244,67,54,.3)}
 
-.result-box{margin-top:14px;padding:16px;border-radius:12px;display:none;animation:fadeIn .4s ease}
+.result-box{margin-top:16px;padding:18px;border-radius:12px;display:none;animation:fadeIn .4s ease}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.score-label{font-size:1.05em;font-weight:700;margin-bottom:10px}
+.score-label{font-size:1.1em;font-weight:700;margin-bottom:12px}
 .score-excellent{color:#4caf50}.score-good{color:#8bc34a}.score-regular{color:#ff9800}.score-poor{color:#f44336}
 .keywords-section{margin-top:10px}
 .kw-title{font-size:.85em;color:#aaa;margin-bottom:6px;font-weight:600}
-.kw-found{display:inline-block;background:rgba(76,175,80,.2);color:#81c784;padding:3px 9px;border-radius:6px;margin:2px;font-size:.8em;border:1px solid rgba(76,175,80,.3)}
-.kw-missing{display:inline-block;background:rgba(244,67,54,.15);color:#ef9a9a;padding:3px 9px;border-radius:6px;margin:2px;font-size:.8em;border:1px solid rgba(244,67,54,.25)}
-.correct-answer{margin-top:12px;padding:12px;background:rgba(102,126,234,.1);border-radius:10px;border-left:3px solid #667eea;font-size:.88em;line-height:1.6;color:#c8c8c8}
+.kw-found{display:inline-block;background:rgba(76,175,80,.2);color:#81c784;padding:4px 10px;border-radius:6px;margin:2px;font-size:.82em;border:1px solid rgba(76,175,80,.3)}
+.kw-missing{display:inline-block;background:rgba(244,67,54,.15);color:#ef9a9a;padding:4px 10px;border-radius:6px;margin:2px;font-size:.82em;border:1px solid rgba(244,67,54,.25)}
+.correct-answer{margin-top:14px;padding:14px;background:rgba(102,126,234,.12);border-radius:10px;border-left:3px solid #667eea;font-size:.9em;line-height:1.6;color:#d0d0d0}
 .correct-answer b{color:#98b0ff}
-.hint-box{margin-top:10px;padding:10px;background:rgba(255,193,7,.1);border-radius:10px;border-left:3px solid #ffc107;font-size:.85em;color:#ffe082;display:none}
+.hint-box{margin-top:10px;padding:12px;background:rgba(255,193,7,.1);border-radius:10px;border-left:3px solid #ffc107;font-size:.87em;color:#ffe082;display:none}
 
-.final-card{text-align:center;padding:30px 20px}
-.final-score{font-size:3em;font-weight:800;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.final-label{font-size:1.05em;color:#aaa;margin:10px 0 20px}
+.final-card{text-align:center;padding:35px 20px}
+.final-score{font-size:3.2em;font-weight:800;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.final-label{font-size:1.1em;color:#aaa;margin:10px 0 22px}
 .final-detail{text-align:left;margin:0 auto;max-width:400px}
-.final-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.93em}
-.btn-restart{margin-top:20px;padding:12px 36px;font-size:1em}
+.final-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.95em}
+.btn-restart{margin-top:22px;padding:14px 40px;font-size:1em}
 .hidden{display:none}
 </style>
 </head>
 <body>
 <div class="container">
 <h1>🎤 Práctica Oral — Farmacología General</h1>
-<p class="subtitle">Unidades 2, 4 y 5 · Respondé con tu voz o escribiendo</p>
+<p class="subtitle">Respondé hablando por micrófono y compará con la respuesta de cátedra</p>
 
 <div class="progress-bar">
 <div class="progress-fill" id="progressFill" style="width:0%"></div>
@@ -108,7 +94,6 @@ let finalTranscript = '';
 let interimTranscript = '';
 let recTimer = null;
 let recSecs = 0;
-let gotAnyResult = false;
 
 if (SR) {
   try {
@@ -121,32 +106,31 @@ if (SR) {
   } catch(e) { speechSupported = false; }
 }
 
-// ══ Questions ══
+// ══ Preguntas ══
 const questions = [
-{unit:2,unitClass:'u2',q:'¿Cuánto tiempo tarda el proceso completo de descubrimiento y desarrollo de un nuevo fármaco? ¿Cuáles son las tres fases principales?',keywords:['10','15 años','descubrimiento','preclínico','clínico','moléculas candidatas','toxicidad','eficacia','voluntarios','pacientes'],answer:'Tarda entre <b>10 y 15 años</b>. Se divide en: <b>1) Descubrimiento</b> (moléculas candidatas), <b>2) Desarrollo preclínico</b> (toxicidad en no humanos), <b>3) Desarrollo clínico</b> (eficacia en voluntarios y pacientes).',hint:'Pensá en cuántos años y qué se estudia: laboratorio → animales → humanos.'},
-{unit:2,unitClass:'u2',q:'¿Qué se evalúa en cada una de las cuatro fases de un ensayo clínico? ¿Qué porcentaje pasa a la siguiente?',keywords:['fase 1','fase 2','fase 3','fase 4','seguridad','eficacia','efectividad','70','33','25','comercialización','vigilancia'],answer:'<b>Fase 1:</b> Seguridad y dosis segura (sanos). Pasa ~<b>70%</b>. <b>Fase 2:</b> Eficacia (pacientes). Pasa ~<b>33%</b>. <b>Fase 3:</b> Efectividad a gran escala. Pasa ~<b>25-30%</b>. <b>Fase 4:</b> Vigilancia post-comercialización.',hint:'F1=seguridad, F2=eficacia, F3=confirmación, F4=post-mercado.'},
-{unit:2,unitClass:'u2',q:'¿Qué es la Medicina Basada en Evidencia? Nombrá sus cinco pasos.',keywords:['evidencia científica','práctica médica','preguntas','encontrar','evaluación crítica','actuar','evaluar resultados','calidad'],answer:'Proceso para obtener y aplicar la mejor <b>evidencia científica</b> en la práctica médica. 5 pasos: <b>1)</b> Preguntas respondibles. <b>2)</b> Encontrar evidencia. <b>3)</b> Evaluación crítica. <b>4)</b> Actuar según evidencia. <b>5)</b> Evaluar resultados.',hint:'Pregunta → Busca → Evalúa → Aplica → Revisa.'},
-{unit:2,unitClass:'u2',q:'¿Qué es un protocolo de investigación clínica? Nombrá sus pasos.',keywords:['propuesta descriptiva','procesos','problema','título','planteamiento','marco teórico','hipótesis','objetivos','metodología','cronograma','análisis'],answer:'<b>Propuesta descriptiva</b> de procesos para contestar un problema de investigación. Pasos: <b>1)</b> Título, <b>2)</b> Planteamiento, <b>3)</b> Marco teórico, <b>4)</b> Hipótesis, <b>5)</b> Objetivos, <b>6)</b> Metodología, <b>7)</b> Cronograma, <b>8)</b> Análisis de resultados.',hint:'Son 8 pasos: desde el título hasta el análisis.'},
-{unit:2,unitClass:'u2',q:'¿Cuáles son los cinco principios éticos de la investigación?',keywords:['respeto','justicia','responsabilidad','honestidad','libertad','ser humano','detrimento','mejorar','sociedad'],answer:'<b>Respeto, Justicia, Responsabilidad, Honestidad y Libertad</b>. Impiden usar la ciencia en detrimento del ser humano.',hint:'Son 5 valores fundamentales.'},
-{unit:2,unitClass:'u2',q:'¿Qué permite la ingeniería genética en farmacología?',keywords:['identificación','aislamiento','amplificación','ADN','manipulación','organismos','bases genéticas','enfermedad','dianas terapéuticas','marcadores moleculares'],answer:'Permite <b>identificar, aislar y amplificar</b> fragmentos de ADN, manipularlos y reintroducirlos en organismos. Busca comprender las <b>bases genéticas</b> de enfermedades para definir nuevas <b>dianas terapéuticas</b> o marcadores moleculares.',hint:'¿Qué se hace con el ADN? ¿Para qué sirve conocer la genética de la enfermedad?'},
-{unit:4,unitClass:'u4',q:'¿Cómo actúan la mayoría de los fármacos? ¿Cuáles son las 4 dianas farmacológicas?',keywords:['fijación','unión','macromoléculas','superficie','interior','células','receptores','enzimas','transportadores','canales iónicos'],answer:'Se fijan a <b>macromoléculas específicas</b> en superficie o interior celular. 4 dianas: <b>Receptores, Enzimas, Transportadores, Canales iónicos</b>.',hint:'Son 4 proteínas reguladoras.'},
-{unit:4,unitClass:'u4',q:'¿Qué son los receptores? ¿Dónde se encuentran? ¿Qué es la especificidad recíproca?',keywords:['macromoléculas','señalización química','membrana celular','organelas','citoplasma','recíproca','fármaco','diana'],answer:'<b>Macromoléculas celulares</b> de señalización química. Ubicados en: membrana celular, membrana de organelas, citoplasma. <b>Especificidad recíproca:</b> cada fármaco→determinadas dianas, cada diana→determinados fármacos.',hint:'Macromoléculas en 3 ubicaciones. La especificidad va en ambos sentidos.'},
-{unit:4,unitClass:'u4',q:'¿Qué diferencia hay entre agonista y antagonista? ¿Tipos de agonistas? ¿Antagonista competitivo?',keywords:['agonista','antagonista','respuesta biológica','activar','bloquear','parcial','puro','completo','submáxima','máxima','competitivo','compiten'],answer:'<b>Agonista:</b> se une y activa → respuesta biológica. <b>Antagonista:</b> se une sin activar → bloquea. Agonistas <b>parciales</b> (submáxima) y <b>completos</b> (máxima). <b>Competitivo:</b> compite con el agonista por el mismo receptor.',hint:'Uno activa, otro bloquea. Parcial vs completo.'},
-{unit:4,unitClass:'u4',q:'¿Qué son la afinidad y la eficacia? ¿Por qué los antagonistas tienen eficacia nula?',keywords:['afinidad','unirse','receptor','eficacia','activar','antagonistas','nula','respuesta biológica','dosis','efectos adversos'],answer:'<b>Afinidad:</b> capacidad de unirse al receptor. <b>Eficacia:</b> capacidad de activarlo. Antagonistas: tienen afinidad pero eficacia <b>nula</b> (se unen, no activan). Al subir dosis → actúan en otras dianas → efectos adversos.',hint:'Afinidad=unirse. Eficacia=activar.'},
-{unit:4,unitClass:'u4',q:'¿Qué son los canales iónicos, sus tipos y sus estados?',keywords:['poros selectivos','membrana','iones','gradiente electroquímico','voltaje','ligandos','cerrados','abiertos','inactivos','refractarios','sodio','potasio','calcio'],answer:'<b>Poros selectivos</b> que permiten flujo de iones según gradiente electroquímico. Tipos: por <b>voltaje</b> o por <b>ligandos</b>. Estados: <b>cerrados</b> (reposo), <b>abiertos</b> (activos), <b>inactivos</b> (refractarios). De Na, K, Ca++, Cl.',hint:'Poros en membrana. 2 tipos. 3 estados.'},
-{unit:4,unitClass:'u4',q:'¿Qué son los segundos mensajeros? Ejemplos. ¿Qué es la proteína G?',keywords:['sustancias químicas','concentración','activación','receptor','respuesta celular','calcio','AMPc','IP3','diacilglicerol','guanina','GDP','GTP','GTPasa','transducción','GPCR'],answer:'<b>Segundos mensajeros:</b> sustancias cuya concentración cambia tras activar el receptor → respuesta celular. Ejemplos: <b>Ca++, AMPc, IP3, DG</b>. <b>Proteína G:</b> se fija a nucleótidos de guanina (GDP/GTP), actividad GTPasa, central en transducción de señales GPCR.',hint:'4 ejemplos. La proteína G → guanina.'},
-{unit:4,unitClass:'u4',q:'Diferencia entre desensibilización, tolerancia y resistencia. ¿Mecanismos posibles?',keywords:['desensibilización','taquifilaxia','segundos','tolerancia','días','semanas','meses','resistencia','antibióticos','antitumorales','alteración','pérdida','receptores','agotamiento','mediadores','degradación','adaptación'],answer:'<b>Desensibilización/taquifilaxia:</b> en segundos. <b>Tolerancia:</b> días/semanas/meses. <b>Resistencia:</b> antibióticos/antitumorales. Mecanismos: alteración receptores, pérdida receptores, agotamiento mediadores, aumento degradación metabólica, adaptación fisiológica.',hint:'La diferencia es el tiempo. 5 mecanismos.'},
-{unit:5,unitClass:'u5',q:'¿Qué es la farmacocinética? ¿Cuáles son los 4 procesos ADME?',keywords:['farmacocinética','curso temporal','concentraciones','fármacos','metabolitos','organismo','absorción','distribución','metabolismo','eliminación','simultáneamente'],answer:'Estudia el <b>curso temporal de concentraciones</b> de fármacos y metabolitos en el organismo. 4 procesos: <b>Absorción, Distribución, Metabolismo, Eliminación</b> (ADME). Ocurren simultáneamente.',hint:'ADME: 4 procesos simultáneos.'},
-{unit:5,unitClass:'u5',q:'¿Qué es la absorción y qué factores influyen?',keywords:['pasaje','sitio de aplicación','circulación sistémica','fisicoquímicas','solubilidad','permeabilidad','vía de administración','farmacotecnia','fisiológicos','primer paso','patológicos','vómitos'],answer:'<b>Pasaje</b> del fármaco desde el sitio de aplicación a la circulación sistémica. Factores: características fisicoquímicas (solubilidad/permeabilidad), vía de administración, farmacotecnia, factores fisiológicos (edad, primer paso), factores patológicos (vómitos, diarrea).',hint:'Un pasaje. 5 categorías de factores.'},
-{unit:5,unitClass:'u5',q:'¿Cuáles son las vías de administración enterales, parenterales y otras?',keywords:['oral','sublingual','rectal','intravenosa','intramuscular','subcutánea','inhalatoria','tópica','transdérmica','intranasal','enterales','parenterales'],answer:'<b>Enterales:</b> oral, sublingual, rectal. <b>Parenterales:</b> intravenosa, intramuscular, subcutánea. <b>Otras:</b> inhalatoria, tópica, transdérmica, intranasal, ótica, conjuntival, intratecal, intraarterial.',hint:'Enterales=digestivo (3). Parenterales=inyectables (3). Y más.'},
-{unit:5,unitClass:'u5',q:'¿Qué es la biodisponibilidad? ¿De qué depende?',keywords:['velocidad','cantidad','fármaco inalterado','circulación sistémica','efecto','absorción','liberación','primer paso','hígado','glucoproteína','solubilidad','permeabilidad','prolongada'],answer:'<b>Biodisponibilidad (F):</b> velocidad y cantidad de fármaco inalterado que llega a la circulación sistémica. Depende de: absorción, liberación, <b>efecto de primer paso</b> (hígado, glucoproteína P). Factores: fisicoquímicas y forma farmacéutica (inmediata, retardada, prolongada).',hint:'Cuánto llega sin cambios a la sangre. El primer paso lo reduce.'},
-{unit:5,unitClass:'u5',q:'¿Qué es la distribución? ¿De qué depende?',keywords:['pasaje','sangre','tejidos','propiedades','proteínas plasmáticas','fracción unida','fracción libre','proteínas tisulares','perfusión tisular','edad','embarazo','obesidad'],answer:'<b>Pasaje</b> del fármaco desde la sangre hacia tejidos. Depende de: propiedades FQ, unión a proteínas plasmáticas (fracción unida/libre), proteínas tisulares, perfusión tisular, factores fisiológicos (edad, embarazo) y patológicos (obesidad, deshidratación, falla hepática/renal).',hint:'Sangre → tejidos. La fracción libre es clave.'},
-{unit:5,unitClass:'u5',q:'¿Qué es el Volumen de Distribución (Vd)? ¿Por qué importa la fracción libre?',keywords:['volumen teórico','fluidos','tejidos','disuelve','fija','proteínas plasmáticas','proteínas tisulares','perfusión','fracción libre','distribuye','efecto'],answer:'<b>Vd:</b> volumen teórico en que el fármaco se disuelve o fija. Depende de propiedades FQ, proteínas plasmáticas/tisulares, perfusión. La <b>fracción libre</b> es la que se distribuye y ejerce efecto (la unida queda retenida sin acción).',hint:'Volumen teórico. Solo la libre actúa.'},
-{unit:4,unitClass:'u4',q:'¿Qué son las enzimas como diana farmacológica? Ejemplos y qué puede provocar un fármaco.',keywords:['proteínas','actividad catalítica','ciclooxigenasa','acetilcolinesterasa','reductasa','asa','inhibición','reversible','irreversible','activación enzimática'],answer:'<b>Proteínas con actividad catalítica</b> (terminan en -asa). Ej: ciclooxigenasa, acetilcolinesterasa, CoA reductasa. Fármacos pueden provocar: <b>inhibición</b> (reversible/irreversible) o <b>activación</b> enzimática.',hint:'Proteínas catalíticas. Inhibir o activar.'}
+{unit:2,unitClass:'u2',q:'¿Cuánto tiempo tarda el proceso completo de descubrimiento y desarrollo de un nuevo fármaco? ¿Cuáles son las tres fases principales?',keywords:['10','15 años','descubrimiento','preclínico','clínico','moléculas candidatas','toxicidad','eficacia','voluntarios','pacientes'],answer:'Tarda entre <b>10 y 15 años</b>. Se divide en: <b>1) Descubrimiento</b> (moléculas candidatas), <b>2) Desarrollo preclínico</b> (toxicidad y farmacocinética en animales/no humanos), y <b>3) Desarrollo clínico</b> (seguridad y eficacia en voluntarios y pacientes).',hint:'Pensá en cuántos años lleva y qué se estudia en laboratorio → animales → humanos.'},
+{unit:2,unitClass:'u2',q:'¿Qué se evalúa en cada una de las cuatro fases de un ensayo clínico? ¿Qué porcentaje pasa a la siguiente fase?',keywords:['fase 1','fase 2','fase 3','fase 4','seguridad','eficacia','efectividad','70','33','25','comercialización','vigilancia'],answer:'<b>Fase 1:</b> Seguridad y dosis segura (voluntarios sanos). Pasa ~<b>70%</b>. <b>Fase 2:</b> Eficacia y seguridad (pacientes). Pasa ~<b>33%</b>. <b>Fase 3:</b> Efectividad a gran escala y comparación con otros fármacos. Pasa ~<b>25-30%</b>. <b>Fase 4:</b> Vigilancia post-comercialización.',hint:'Fase 1 = seguridad, Fase 2 = eficacia, Fase 3 = confirmación, Fase 4 = vigilancia post-aprobación.'},
+{unit:2,unitClass:'u2',q:'¿Qué es la Medicina Basada en Evidencia? Nombrá sus cinco pasos.',keywords:['evidencia científica','práctica médica','preguntas','encontrar','evaluación crítica','actuar','evaluar resultados','calidad'],answer:'Proceso para obtener y aplicar la <b>mejor evidencia científica</b> en la práctica médica cotidiana. Pasos: <b>1)</b> Formular preguntas respondibles. <b>2)</b> Encontrar la mejor evidencia. <b>3)</b> Evaluación crítica. <b>4)</b> Actuar según la evidencia. <b>5)</b> Evaluar los resultados.',hint:'Pregunta → Busca → Evalúa críticamente → Aplica → Mide resultados.'},
+{unit:2,unitClass:'u2',q:'¿Qué es un protocolo de investigación clínica? Nombrá sus pasos.',keywords:['propuesta descriptiva','procesos','problema','título','planteamiento','marco teórico','hipótesis','objetivos','metodología','cronograma','análisis'],answer:'Es una <b>propuesta descriptiva</b> de todos los procesos para responder a un problema de investigación. Pasos: <b>1)</b> Título, <b>2)</b> Planteamiento del problema, <b>3)</b> Marco teórico, <b>4)</b> Hipótesis, <b>5)</b> Objetivos, <b>6)</b> Metodología, <b>7)</b> Cronograma, <b>8)</b> Análisis de resultados.',hint:'Son 8 pasos: desde el título hasta el análisis de datos.'},
+{unit:2,unitClass:'u2',q:'¿Cuáles son los cinco principios éticos de la investigación? ¿Por qué importan los límites éticos?',keywords:['respeto','justicia','responsabilidad','honestidad','libertad','ser humano','detrimento','mejorar','sociedad'],answer:'Los cinco principios son: <b>Respeto, Justicia, Responsabilidad, Honestidad y Libertad</b>. Los límites éticos impiden que la ciencia se use en detrimento del ser humano o el entorno.',hint:'Son 5 valores éticos esenciales en seres humanos.'},
+{unit:2,unitClass:'u2',q:'¿Qué permite la ingeniería genética en farmacología?',keywords:['identificación','aislamiento','amplificación','ADN','manipulación','organismos','bases genéticas','enfermedad','dianas terapéuticas','marcadores moleculares'],answer:'Permite <b>identificar, aislar y amplificar</b> fragmentos de ADN para modificarlos y reintroducirlos en organismos. Permite comprender las <b>bases genéticas</b> de enfermedades para definir nuevas <b>dianas terapéuticas</b> y medir la eficacia.',hint:'¿Qué se hace con el ADN y cómo ayuda a definir dianas terapéuticas?'},
+{unit:4,unitClass:'u4',q:'¿Cómo actúan la mayoría de los fármacos? ¿Cuáles son las 4 dianas farmacológicas principales?',keywords:['fijación','unión','macromoléculas','superficie','interior','células','receptores','enzimas','transportadores','canales iónicos'],answer:'Se unen a <b>macromoléculas específicas</b> (dianas) en la superficie o interior de las células. Las 4 dianas principales son: <b>Receptores, Enzimas, Moléculas transportadoras y Canales iónicos</b>.',hint:'Son 4 tipos de proteínas reguladoras.'},
+{unit:4,unitClass:'u4',q:'¿Qué son los receptores celulares? ¿Dónde se ubican? ¿Qué significa especificidad recíproca?',keywords:['macromoléculas','señalización química','membrana celular','organelas','citoplasma','recíproca','fármaco','diana'],answer:'Son <b>macromoléculas celulares</b> encargadas de la señalización química. Se ubican en: <b>membrana celular, membrana de organelas y citoplasma</b>. <b>Especificidad recíproca:</b> cada fármaco se une solo a ciertas dianas, y cada diana reconoce solo ciertos fármacos.',hint:'Macromoléculas en 3 sitios celulares. La especificidad es mutua.'},
+{unit:4,unitClass:'u4',q:'¿Qué diferencia hay entre agonista y antagonista? ¿Qué tipos de agonistas existen y qué es un antagonista competitivo?',keywords:['agonista','antagonista','respuesta biológica','activar','bloquear','parcial','puro','completo','submáxima','máxima','competitivo','compiten'],answer:'<b>Agonista:</b> se une y activa el receptor → desencadena respuesta biológica. <b>Antagonista:</b> se une sin activar → bloquea al agonista. Agonistas <b>parciales</b> (respuesta submáxima) y <b>completos/puros</b> (respuesta máxima). <b>Antagonista competitivo:</b> compite por el mismo receptor con el agonista.',hint:'Uno activa, otro bloquea. Los agonistas pueden ser completos o parciales.'},
+{unit:4,unitClass:'u4',q:'¿Qué son la afinidad y la eficacia de un fármaco? ¿Por qué los antagonistas tienen eficacia nula?',keywords:['afinidad','unirse','receptor','eficacia','activar','antagonistas','nula','respuesta biológica','dosis','efectos adversos'],answer:'<b>Afinidad:</b> capacidad de <b>unirse</b> al receptor. <b>Eficacia:</b> capacidad de <b>activarlo</b> y generar respuesta. Los antagonistas tienen eficacia <b>nula</b> porque se unen pero no provocan respuesta biológica.',hint:'Afinidad = tendencia a unirse. Eficacia = capacidad de activar.'},
+{unit:4,unitClass:'u4',q:'¿Qué son los canales iónicos? ¿Qué tipos existen y en qué 3 estados pueden encontrarse?',keywords:['poros selectivos','membrana','iones','gradiente electroquímico','voltaje','ligandos','cerrados','abiertos','inactivos','refractarios','sodio','potasio','calcio'],answer:'Son <b>poros selectivos</b> de la membrana que dejan pasar iones a favor de su gradiente electroquímico. Tipos: operados por <b>voltaje</b> o por <b>ligandos</b>. 3 estados: <b>cerrados</b> (en reposo), <b>abiertos</b> (activos) e <b>inactivos/refractarios</b>.',hint:'Poros en membrana. 2 tipos por activación y 3 estados funcionales.'},
+{unit:4,unitClass:'u4',q:'¿Qué son los segundos mensajeros? Mencioná ejemplos. ¿Qué es la proteína G?',keywords:['sustancias químicas','concentración','activación','receptor','respuesta celular','calcio','AMPc','IP3','diacilglicerol','guanina','GDP','GTP','GTPasa','transducción','GPCR'],answer:'<b>Segundos mensajeros:</b> sustancias cuya concentración cambia tras activar el receptor para generar la respuesta celular. Ejemplos: <b>Ca++, AMPc, IP3, DG</b>. La <b>proteína G</b> se fija a nucleótidos de guanina (GDP/GTP), tiene actividad GTPasa y transduce señales de receptores GPCR.',hint:'4 ejemplos de segundos mensajeros. Proteína G se une a nucleótidos de guanina.'},
+{unit:4,unitClass:'u4',q:'¿Qué diferencia hay entre desensibilización/taquifilaxia, tolerancia y resistencia farmacológica?',keywords:['desensibilización','taquifilaxia','segundos','tolerancia','días','semanas','meses','resistencia','antibióticos','antitumorales','alteración','pérdida','receptores','agotamiento','mediadores','degradación','adaptación'],answer:'<b>Desensibilización/taquifilaxia:</b> disminución del efecto en <b>segundos</b>. <b>Tolerancia:</b> reducción gradual en <b>días, semanas o meses</b>. <b>Resistencia:</b> pérdida de eficacia de <b>antibióticos o antitumorales</b>. Mecanismos: alteración o pérdida de receptores, agotamiento de mediadores, degradación metabólica, adaptación fisiológica.',hint:'La diferencia clave es el tiempo de aparición: segundos vs días/semanas vs pérdida en antibióticos.'},
+{unit:5,unitClass:'u5',q:'¿Qué es la farmacocinética? ¿Cuáles son los 4 procesos que determinan la concentración plasmática?',keywords:['farmacocinética','curso temporal','concentraciones','fármacos','metabolitos','organismo','absorción','distribución','metabolismo','eliminación','simultáneamente'],answer:'Estudia el <b>curso temporal de las concentraciones</b> de fármacos y metabolitos en el organismo. Los 4 procesos son: <b>Absorción, Distribución, Metabolismo y Eliminación</b> (ADME), que actúan simultáneamente.',hint:'ADME: 4 procesos simultáneos en el organismo.'},
+{unit:5,unitClass:'u5',q:'¿Qué es la absorción y qué factores influyen en ella?',keywords:['pasaje','sitio de aplicación','circulación sistémica','fisicoquímicas','solubilidad','permeabilidad','vía de administración','farmacotecnia','fisiológicos','primer paso','patológicos','vómitos'],answer:'Es el <b>pasaje del fármaco</b> desde el sitio de aplicación hacia la circulación sistémica. Factores: características fisicoquímicas (solubilidad/permeabilidad), vía de administración, farmacotecnia (liberación), factores fisiológicos (edad, primer paso) y patológicos (vómitos, diarrea).',hint:'Pasaje a la sangre. 5 tipos de factores.'},
+{unit:5,unitClass:'u5',q:'¿Cuáles son las vías de administración enterales, parenterales y otras?',keywords:['oral','sublingual','rectal','intravenosa','intramuscular','subcutánea','inhalatoria','tópica','transdérmica','intranasal','enterales','parenterales'],answer:'<b>Enterales:</b> oral, sublingual, rectal. <b>Parenterales:</b> intravenosa (IV), intramuscular (IM), subcutánea (SC). <b>Otras:</b> inhalatoria, tópica, transdérmica, intranasal, intratecal, etc.',hint:'Enterales = tubo digestivo (3). Parenterales = inyectables (3).'},
+{unit:5,unitClass:'u5',q:'¿Qué es la biodisponibilidad? ¿De qué depende y qué factores la condicionan?',keywords:['velocidad','cantidad','fármaco inalterado','circulación sistémica','efecto','absorción','liberación','primer paso','hígado','glucoproteína','solubilidad','permeabilidad','prolongada'],answer:'<b>Biodisponibilidad (F):</b> velocidad y cantidad de fármaco inalterado que llega a la circulación sistémica. Depende de: absorción, liberación y <b>efecto de primer paso</b> (hígado, intestino - glucoproteína P). Condicionada por solubilidad/permeabilidad y tipo de forma farmacéutica.',hint:'Cantidad y velocidad de fármaco intacto en sangre.'},
+{unit:5,unitClass:'u5',q:'¿Qué es la distribución? ¿De qué factores depende?',keywords:['pasaje','sangre','tejidos','propiedades','proteínas plasmáticas','fracción unida','fracción libre','proteínas tisulares','perfusión tisular','edad','embarazo','obesidad'],answer:'Es el <b>pasaje del fármaco</b> desde la sangre hacia los tejidos. Depende de: propiedades fisicoquímicas, <b>unión a proteínas plasmáticas</b> (fracción libre vs unida), proteínas tisulares, perfusión sanguínea, y factores fisiológicos y patológicos.',hint:'Sangre → tejidos. Fracción libre fundamental.'},
+{unit:5,unitClass:'u5',q:'¿Qué es el Volumen de Distribución (Vd)? ¿Por qué es fundamental la fracción libre?',keywords:['volumen teórico','fluidos','tejidos','disuelve','fija','proteínas plasmáticas','proteínas tisulares','perfusión','fracción libre','distribuye','efecto'],answer:'<b>Vd:</b> volumen teórico de fluidos o tejidos en que el fármaco se disuelve o fija. La <b>fracción libre</b> es la única biológicamente activa: es la que se distribuye a los tejidos y produce el efecto farmacológico.',hint:'Volumen teórico. Solo la fracción libre actúa.'},
+{unit:4,unitClass:'u4',q:'¿Qué son las enzimas como diana farmacológica? Ejemplos y qué puede provocar un fármaco sobre ellas.',keywords:['proteínas','actividad catalítica','ciclooxigenasa','acetilcolinesterasa','reductasa','asa','inhibición','reversible','irreversible','activación enzimática'],answer:'Son <b>proteínas con actividad catalítica</b> (terminan en -asa). Ejemplos: ciclooxigenasa, acetilcolinesterasa, CoA reductasa. Los fármacos pueden causar <b>inhibición</b> (reversible o irreversible) o <b>activación</b> enzimática.',hint:'Proteínas catalíticas. Un fármaco puede inhibirlas o activarlas.'}
 ];
 
 let current = 0, scores = [], answered = new Array(questions.length).fill(false);
-let currentMode = speechSupported ? 'mic' : 'write';
 
 function normalize(s){
   return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
@@ -157,94 +141,110 @@ function checkKW(text, kws){
   const n = normalize(text);
   let found=[], missing=[];
   kws.forEach(kw=>{
-    const nk=normalize(kw);
+    const nk = normalize(kw);
     if(n.includes(nk)) found.push(kw);
-    else{const ws=nk.split(' ');if(ws.length>1&&ws.every(w=>n.includes(w)))found.push(kw);else missing.push(kw);}
+    else {
+      const ws = nk.split(' ');
+      if(ws.length>1 && ws.every(w=>n.includes(w))) found.push(kw);
+      else missing.push(kw);
+    }
   });
-  return{found,missing};
+  return {found, missing};
 }
 
 function scoreInfo(p){
-  if(p>=85)return{l:'¡Excelente! 🌟',c:'score-excellent',e:'🏆'};
-  if(p>=65)return{l:'¡Muy bien! 👏',c:'score-good',e:'✅'};
-  if(p>=40)return{l:'Regular, repasá 📖',c:'score-regular',e:'📝'};
-  return{l:'Necesitás repasar 💪',c:'score-poor',e:'🔄'};
+  if(p>=85) return {l:'¡Excelente! 🌟', c:'score-excellent', e:'🏆'};
+  if(p>=65) return {l:'¡Muy bien! 👏', c:'score-good', e:'✅'};
+  if(p>=40) return {l:'Regular, repasá 📖', c:'score-regular', e:'📝'};
+  return {l:'Necesitás repasar 💪', c:'score-poor', e:'🔄'};
 }
 
 function startRec(){
-  if(!recognition)return;
-  finalTranscript='';interimTranscript='';recSecs=0;gotAnyResult=false;
+  if(!recognition) return;
+  finalTranscript=''; interimTranscript=''; recSecs=0;
+  
   recognition.onresult=function(e){
-    gotAnyResult=true;interimTranscript='';
-    for(let i=e.resultIndex;i<e.results.length;i++){
-      if(e.results[i].isFinal)finalTranscript+=e.results[i][0].transcript+' ';
-      else interimTranscript+=e.results[i][0].transcript;
+    interimTranscript='';
+    for(let i=e.resultIndex; i<e.results.length; i++){
+      if(e.results[i].isFinal) finalTranscript += e.results[i][0].transcript + ' ';
+      else interimTranscript += e.results[i][0].transcript;
     }
     updateTrans();
   };
+  
   recognition.onerror=function(e){
     if(e.error==='not-allowed'||e.error==='service-not-allowed'){
       stopRec();
-      showMicError('⚠️ El micrófono no está disponible en este navegador. <b>Abrí el archivo directamente en Google Chrome</b> o usá la pestaña "✍️ Escribir".');
+      alert('⚠️ Para usar el micrófono tenés que darle "Permitir" cuando Chrome te lo pida.');
     }
   };
-  recognition.onend=function(){if(isRecording){try{recognition.start();}catch(e){}}};
+  
+  recognition.onend=function(){
+    if(isRecording){
+      try{ recognition.start(); }catch(e){}
+    }
+  };
+  
   try{
-    recognition.start();isRecording=true;
+    recognition.start();
+    isRecording = true;
     document.getElementById('micBtn').classList.add('recording');
-    const ml=document.getElementById('micLabel');ml.textContent='🔴 Grabando... tocá para detener';ml.classList.add('rec');
+    const ml=document.getElementById('micLabel');
+    ml.textContent='🔴 Grabando... tocá para terminar';
+    ml.classList.add('rec');
     document.getElementById('timerD').style.display='block';
-    recTimer=setInterval(()=>{recSecs++;const m=Math.floor(recSecs/60),s=recSecs%60;document.getElementById('timerD').textContent=m+':'+String(s).padStart(2,'0');},1000);
-  }catch(e){showMicError('No se pudo iniciar el micrófono. Usá la pestaña "✍️ Escribir".');}
+    recTimer=setInterval(()=>{
+      recSecs++;
+      const m=Math.floor(recSecs/60), s=recSecs%60;
+      document.getElementById('timerD').textContent=m+':'+String(s).padStart(2,'0');
+    },1000);
+  }catch(e){
+    console.error(e);
+  }
 }
 
 function stopRec(){
-  if(!recognition)return;
-  isRecording=false;recognition.stop();clearInterval(recTimer);
-  const mb=document.getElementById('micBtn');if(mb)mb.classList.remove('recording');
-  const ml=document.getElementById('micLabel');if(ml){ml.textContent='Tocá el micrófono para grabar';ml.classList.remove('rec');}
-  const td=document.getElementById('timerD');if(td)td.style.display='none';
-  
-  // Si grabó pero no captó nada
-  if(!gotAnyResult && recSecs > 3){
-    showMicError('No se detectó audio. <b>Probá abrir el archivo en Chrome</b> (no desde WhatsApp ni otro navegador). O usá la pestaña "✍️ Escribir".');
+  if(!recognition) return;
+  isRecording = false;
+  recognition.stop();
+  clearInterval(recTimer);
+  const mb=document.getElementById('micBtn'); if(mb) mb.classList.remove('recording');
+  const ml=document.getElementById('micLabel');
+  if(ml){
+    ml.textContent='Tocá el micrófono para volver a hablar';
+    ml.classList.remove('rec');
   }
-  
-  const cb=document.getElementById('checkBtn');if(cb)cb.disabled=!finalTranscript.trim();
+  const td=document.getElementById('timerD'); if(td) td.style.display='none';
+  const cb=document.getElementById('checkBtn'); if(cb) cb.disabled = !finalTranscript.trim();
+  const clr=document.getElementById('clearBtn'); if(clr) clr.style.display = finalTranscript.trim() ? 'inline-block' : 'none';
 }
 
-function toggleRec(){if(isRecording)stopRec();else startRec();}
+function toggleRec(){
+  if(isRecording) stopRec();
+  else startRec();
+}
 
-function showMicError(msg){
-  let box=document.getElementById('micError');
-  if(!box){box=document.createElement('div');box.id='micError';box.className='warning-box';
-    const mp=document.getElementById('micPanel');if(mp)mp.appendChild(box);}
-  box.innerHTML=msg;
+function clearRecording(){
+  if(isRecording) stopRec();
+  finalTranscript=''; interimTranscript='';
+  updateTrans();
+  const clr=document.getElementById('clearBtn'); if(clr) clr.style.display='none';
+  const cb=document.getElementById('checkBtn'); if(cb) cb.disabled=true;
+  const ml=document.getElementById('micLabel'); if(ml) ml.textContent='🎤 Tocá el micrófono para responder';
 }
 
 function updateTrans(){
   const b=document.getElementById('transBox');
-  if(!b)return;
-  if(finalTranscript||interimTranscript){b.classList.remove('empty');b.innerHTML=finalTranscript+'<span class="interim">'+interimTranscript+'</span>';}
-  else{b.classList.add('empty');b.textContent='Tu respuesta aparecerá acá mientras hablás...';}
-  const cb=document.getElementById('checkBtn');if(cb)cb.disabled=!finalTranscript.trim();
-}
-
-function switchMode(mode){
-  currentMode=mode;
-  document.querySelectorAll('.mode-tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.mode-panel').forEach(p=>p.classList.remove('active'));
-  document.getElementById('tab-'+mode).classList.add('active');
-  document.getElementById(mode+'Panel').classList.add('active');
-  if(mode==='write'){if(isRecording)stopRec();
-    const wa=document.getElementById('writeArea');
-    if(wa&&finalTranscript.trim())wa.value=finalTranscript.trim();
+  if(!b) return;
+  if(finalTranscript||interimTranscript){
+    b.classList.remove('empty');
+    b.innerHTML=finalTranscript + '<span class="interim">' + interimTranscript + '</span>';
+  } else {
+    b.classList.add('empty');
+    b.textContent='Tu respuesta oral aparecerá acá mientras hablás...';
   }
-}
-
-function getAnswer(){
-  if(currentMode==='write'){const wa=document.getElementById('writeArea');return wa?wa.value.trim():'';}
-  return finalTranscript.trim();
+  const cb=document.getElementById('checkBtn');
+  if(cb) cb.disabled = !finalTranscript.trim();
 }
 
 function renderQ(idx){
@@ -257,38 +257,19 @@ function renderQ(idx){
       <div class="q-number">Pregunta ${idx+1} de ${questions.length}</div>
       <div class="question">${q.q}</div>
       
-      <div class="mode-tabs">
-        <div class="mode-tab ${currentMode==='mic'?'active':''}" id="tab-mic" onclick="switchMode('mic')">🎤 Hablar</div>
-        <div class="mode-tab ${currentMode==='write'?'active':''}" id="tab-write" onclick="switchMode('write')">✍️ Escribir</div>
-      </div>
-      
-      <div class="mode-panel ${currentMode==='mic'?'active':''}" id="micPanel">
-        ${speechSupported ? `
-          <div class="mic-area">
-            <div class="mic-btn" id="micBtn" onclick="toggleRec()">
-              <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
-            </div>
-            <div class="mic-label" id="micLabel">🎤 Tocá el micrófono para empezar</div>
-            <div class="timer" id="timerD" style="display:none">0:00</div>
-          </div>
-          <div class="transcript-box empty" id="transBox">Tu respuesta aparecerá acá mientras hablás...</div>
-        ` : `
-          <div class="warning-box">
-            <b>⚠️ Este navegador no soporta el micrófono.</b><br>
-            Abrí el archivo directamente en <b>Google Chrome</b> (no desde WhatsApp).<br>
-            Mientras tanto, usá la pestaña "✍️ Escribir".
-          </div>
-        `}
-      </div>
-      
-      <div class="mode-panel ${currentMode==='write'?'active':''}" id="writePanel">
-        <div class="write-area">
-          <textarea id="writeArea" placeholder="Escribí tu respuesta acá con tus propias palabras, como si estuvieras en un oral..."></textarea>
+      <div class="mic-area">
+        <div class="mic-btn" id="micBtn" onclick="toggleRec()">
+          <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
         </div>
+        <div class="mic-label" id="micLabel">🎤 Tocá el micrófono para responder</div>
+        <div class="timer" id="timerD" style="display:none">0:00</div>
       </div>
+      
+      <div class="transcript-box empty" id="transBox">Tu respuesta oral aparecerá acá mientras hablás...</div>
       
       <div class="btn-row">
-        <button class="btn btn-check" id="checkBtn" onclick="doCheck(${idx})">✔ Verificar</button>
+        <button class="btn btn-check" id="checkBtn" onclick="doCheck(${idx})" disabled>✔ Verificar respuesta</button>
+        <button class="btn btn-clear" id="clearBtn" onclick="clearRecording()" style="display:none">🔄 Reintentar audio</button>
         <button class="btn btn-hint" onclick="document.getElementById('hintBox').style.display='block'">💡 Pista</button>
         <button class="btn btn-skip" onclick="doSkip(${idx})">Saltar ⟩</button>
       </div>
@@ -296,47 +277,52 @@ function renderQ(idx){
       <div class="result-box" id="resultBox"></div>
     </div>`;
   
-  finalTranscript='';interimTranscript='';
+  finalTranscript=''; interimTranscript='';
   updateProgress();
-  
-  // Enable check for write mode on input
-  const wa=document.getElementById('writeArea');
-  if(wa)wa.addEventListener('input',()=>{if(currentMode==='write'){const cb=document.getElementById('checkBtn');if(cb)cb.disabled=!wa.value.trim();}});
 }
 
 function doCheck(idx){
-  if(isRecording)stopRec();
+  if(isRecording) stopRec();
   const q=questions[idx];
-  const txt=getAnswer();
-  if(!txt){alert('Primero hablá o escribí tu respuesta 😉');return;}
+  const txt=finalTranscript.trim();
+  if(!txt){ alert('Tocá el micrófono y hablá antes de verificar 😉'); return; }
   
-  const{found,missing}=checkKW(txt,q.keywords);
-  const pct=Math.round((found.length/q.keywords.length)*100);
-  const si=scoreInfo(pct);
-  scores[idx]=pct;answered[idx]=true;
+  const {found,missing} = checkKW(txt, q.keywords);
+  const pct = Math.round((found.length/q.keywords.length)*100);
+  const si = scoreInfo(pct);
+  scores[idx]=pct; answered[idx]=true;
   
   const box=document.getElementById('resultBox');
   box.innerHTML=`
-    <div class="score-label ${si.c}">${si.e} ${si.l} — ${pct}% (${found.length}/${q.keywords.length})</div>
-    <div class="keywords-section"><div class="kw-title">✅ Mencionaste:</div>
-    <div>${found.length?found.map(k=>`<span class="kw-found">${k}</span>`).join(''):'<span style="color:#888">Ninguno</span>'}</div></div>
-    <div class="keywords-section" style="margin-top:8px"><div class="kw-title">❌ Faltaron:</div>
-    <div>${missing.length?missing.map(k=>`<span class="kw-missing">${k}</span>`).join(''):'<span style="color:#81c784">¡Ninguno! 🎉</span>'}</div></div>
-    <div class="correct-answer"><b>📋 Respuesta completa:</b><br><br>${q.answer}</div>`;
+    <div class="score-label ${si.c}">${si.e} ${si.l} — ${pct}% de acierto (${found.length}/${q.keywords.length} conceptos)</div>
+    <div class="keywords-section">
+      <div class="kw-title">✅ Conceptos que mencionaste:</div>
+      <div>${found.length ? found.map(k=>`<span class="kw-found">${k}</span>`).join('') : '<span style="color:#888">Ninguno detectado</span>'}</div>
+    </div>
+    <div class="keywords-section" style="margin-top:8px">
+      <div class="kw-title">❌ Conceptos que te faltaron:</div>
+      <div>${missing.length ? missing.map(k=>`<span class="kw-missing">${k}</span>`).join('') : '<span style="color:#81c784">¡Completísimo! 🎉</span>'}</div>
+    </div>
+    <div class="correct-answer"><b>📋 Respuesta de cátedra completa:</b><br><br>${q.answer}</div>`;
   box.style.display='block';
-  document.querySelector('.btn-row').innerHTML=`<button class="btn btn-next" onclick="nextQ()">${idx<questions.length-1?'Siguiente ⟩':'Resultado final 🏁'}</button>`;
+  
+  document.querySelector('.btn-row').innerHTML=`<button class="btn btn-next" onclick="nextQ()">${idx<questions.length-1?'Siguiente pregunta ⟩':'Ver resultado final 🏁'}</button>`;
 }
 
 function doSkip(idx){
-  if(isRecording)stopRec();
-  scores[idx]=0;answered[idx]=true;
+  if(isRecording) stopRec();
+  scores[idx]=0; answered[idx]=true;
   const box=document.getElementById('resultBox');
-  box.innerHTML=`<div class="score-label score-poor">⏭ Saltada — 0%</div><div class="correct-answer"><b>📋 Respuesta:</b><br><br>${questions[idx].answer}</div>`;
+  box.innerHTML=`<div class="score-label score-poor">⏭ Pregunta saltada — 0%</div><div class="correct-answer"><b>📋 Respuesta completa:</b><br><br>${questions[idx].answer}</div>`;
   box.style.display='block';
-  document.querySelector('.btn-row').innerHTML=`<button class="btn btn-next" onclick="nextQ()">${idx<questions.length-1?'Siguiente ⟩':'Resultado final 🏁'}</button>`;
+  document.querySelector('.btn-row').innerHTML=`<button class="btn btn-next" onclick="nextQ()">${idx<questions.length-1?'Siguiente pregunta ⟩':'Ver resultado final 🏁'}</button>`;
 }
 
-function nextQ(){current++;if(current>=questions.length)showFinal();else renderQ(current);}
+function nextQ(){
+  current++;
+  if(current>=questions.length) showFinal();
+  else renderQ(current);
+}
 
 function updateProgress(){
   const d=answered.filter(Boolean).length;
@@ -346,27 +332,30 @@ function updateProgress(){
 
 function showFinal(){
   document.getElementById('quizArea').classList.add('hidden');
-  const a=document.getElementById('finalArea');a.classList.remove('hidden');
+  const a=document.getElementById('finalArea'); a.classList.remove('hidden');
   const avg=Math.round(scores.reduce((a,b)=>a+(b||0),0)/questions.length);
   const si=scoreInfo(avg);
   const au=arr=>arr.length?Math.round(arr.reduce((a,b)=>a+(b||0),0)/arr.length):0;
   a.innerHTML=`<div class="card final-card">
     <div class="final-score">${avg}%</div><div class="final-label">${si.l}</div>
     <div class="final-detail">
-      <div class="final-row"><span>📊 Promedio</span><span class="${si.c}" style="font-weight:700">${avg}%</span></div>
-      <div class="final-row"><span>📘 U2 Desarrollo</span><span>${au(scores.filter((_,i)=>questions[i].unit===2))}%</span></div>
-      <div class="final-row"><span>📗 U4 Acción fármacos</span><span>${au(scores.filter((_,i)=>questions[i].unit===4))}%</span></div>
+      <div class="final-row"><span>📊 Promedio general</span><span class="${si.c}" style="font-weight:700">${avg}%</span></div>
+      <div class="final-row"><span>📘 U2 Desarrollo de fármacos</span><span>${au(scores.filter((_,i)=>questions[i].unit===2))}%</span></div>
+      <div class="final-row"><span>📗 U4 Acción de los fármacos</span><span>${au(scores.filter((_,i)=>questions[i].unit===4))}%</span></div>
       <div class="final-row"><span>📙 U5 Farmacocinética</span><span>${au(scores.filter((_,i)=>questions[i].unit===5))}%</span></div>
-      <div class="final-row"><span>✅ Respondidas</span><span>${answered.filter(Boolean).length}/${questions.length}</span></div>
+      <div class="final-row"><span>✅ Preguntas respondidas</span><span>${answered.filter(Boolean).length}/${questions.length}</span></div>
     </div>
-    <button class="btn btn-check btn-restart" onclick="restart()">🔄 Otra vez</button></div>`;
+    <button class="btn btn-check btn-restart" onclick="restart()">🔄 Volver a practicar</button></div>`;
 }
 
 function restart(){
-  current=0;scores=[];answered=new Array(questions.length).fill(false);
+  current=0; scores=[]; answered=new Array(questions.length).fill(false);
   document.getElementById('finalArea').classList.add('hidden');
   document.getElementById('quizArea').classList.remove('hidden');
-  for(let i=questions.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[questions[i],questions[j]]=[questions[j],questions[i]];}
+  for(let i=questions.length-1; i>0; i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [questions[i],questions[j]]=[questions[j],questions[i]];
+  }
   renderQ(0);
 }
 
